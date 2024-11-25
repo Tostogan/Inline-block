@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #0073e6;
+}
+a {
+    text-decoration: none;
+}
+.navbar {
+    background-color: #eef0f3;
+}
+.navbar li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+}
+.navbar a::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid transparent;
+    transform: translate(-100%);
+}
+.navbar a:hover::after {
+    border-bottom-color: blue;
+    transform: translateX(0%);
+    transition: 0.5s;
+
+}
+a {
+    color: blue;
+}
